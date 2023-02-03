@@ -274,13 +274,18 @@ packages:
       name: shared_preferences
       url: "https://pub.dartlang.org"
     source: hosted
+<<<<<<< HEAD
     version: "2.0.17"
+=======
+    version: "2.0.15"
+>>>>>>> 13bb8ca4347b53ea5847def815602b36dbce3003
   shared_preferences_android:
     dependency: transitive
     description:
       name: shared_preferences_android
       url: "https://pub.dartlang.org"
     source: hosted
+<<<<<<< HEAD
     version: "2.0.15"
   shared_preferences_foundation:
     dependency: transitive
@@ -289,13 +294,34 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.2"
+=======
+    version: "2.0.14"
+  shared_preferences_ios:
+    dependency: transitive
+    description:
+      name: shared_preferences_ios
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.1.1"
+>>>>>>> 13bb8ca4347b53ea5847def815602b36dbce3003
   shared_preferences_linux:
     dependency: transitive
     description:
       name: shared_preferences_linux
       url: "https://pub.dartlang.org"
     source: hosted
+<<<<<<< HEAD
     version: "2.1.3"
+=======
+    version: "2.1.2"
+  shared_preferences_macos:
+    dependency: transitive
+    description:
+      name: shared_preferences_macos
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.0.4"
+>>>>>>> 13bb8ca4347b53ea5847def815602b36dbce3003
   shared_preferences_platform_interface:
     dependency: transitive
     description:
@@ -316,7 +342,11 @@ packages:
       name: shared_preferences_windows
       url: "https://pub.dartlang.org"
     source: hosted
+<<<<<<< HEAD
     version: "2.1.3"
+=======
+    version: "2.1.2"
+>>>>>>> 13bb8ca4347b53ea5847def815602b36dbce3003
   sky_engine:
     dependency: transitive
     description: flutter
@@ -392,6 +422,7 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.3.1"
+<<<<<<< HEAD
   url_launcher:
     dependency: "direct main"
     description:
@@ -448,6 +479,8 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "3.0.3"
+=======
+>>>>>>> 13bb8ca4347b53ea5847def815602b36dbce3003
   vector_math:
     dependency: transitive
     description:
@@ -468,7 +501,11 @@ packages:
       name: xdg_directories
       url: "https://pub.dartlang.org"
     source: hosted
+<<<<<<< HEAD
     version: "0.2.0+3"
+=======
+    version: "0.2.0+2"
+>>>>>>> 13bb8ca4347b53ea5847def815602b36dbce3003
 sdks:
   dart: ">=2.18.6 <3.0.0"
   flutter: ">=3.3.0"

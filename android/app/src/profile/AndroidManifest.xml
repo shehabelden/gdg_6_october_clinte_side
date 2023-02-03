@@ -2,7 +2,11 @@
     package="com.example.gdg_6_october">
     <!-- The INTERNET permission is required for development. Specifically,
          the Flutter tool needs it to communicate with the running application
+<<<<<<< HEAD
          to allow setting    breakpoints, to provide hot reload, etc.
+=======
+         to allow setting breakpoints, to provide hot reload, etc.
+>>>>>>> 13bb8ca4347b53ea5847def815602b36dbce3003
     -->
     <uses-permission android:name="android.permission.INTERNET"/>
 </manifest>

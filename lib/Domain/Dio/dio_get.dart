@@ -5,7 +5,11 @@ import 'package:gdg_6_october/app/cache_helper/cache_helper.dart';
  //Todo: you will replace your dio class with this class
 class DioHelper {
   static late Dio dio;
+<<<<<<< HEAD
   static String baseUrl="https://shehabeldin842000.pythonanywhere.com/";
+=======
+  static String baseUrl="http://192.168.1.10:8000/";
+>>>>>>> 13bb8ca4347b53ea5847def815602b36dbce3003
   //Here The Initialize of Dio and Start Connect to API Using baseUrl.
   static init() {
     dio = Dio(
@@ -47,14 +51,23 @@ class DioHelper {
   static Future<Response> postData({
     required String url,
     required Map<String, dynamic> data,
+<<<<<<< HEAD
     bool files = false,
     String? token,
+=======
+    //bool files = false,
+    // String? token,
+>>>>>>> 13bb8ca4347b53ea5847def815602b36dbce3003
     ProgressCallback? onSendProgress,
     ProgressCallback? onReceiveProgress,
   }) async {
     try {
       dio.options.headers = {
+<<<<<<< HEAD
         'Authorization': 'Bearer ${token ?? ''}',
+=======
+        // 'Authorization': 'Bearer ${token ?? ''}',
+>>>>>>> 13bb8ca4347b53ea5847def815602b36dbce3003
       };
       final Response response = await dio.post(
         url,

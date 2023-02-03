@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:gdg_6_october/Presentation/HomeBadge/events/Widget/event%20list.dart';
+<<<<<<< HEAD
 import 'package:gdg_6_october/Presentation/Tiket/badges/TixetForm.dart';
+=======
+>>>>>>> 13bb8ca4347b53ea5847def815602b36dbce3003
 import 'package:gdg_6_october/Presentation/style/size/Container.dart';
 import 'package:gdg_6_october/app/main_cubt/cubt/cubt.dart';
 import 'package:gdg_6_october/app/main_cubt/state/state.dart';
 class Event extends StatelessWidget {
+<<<<<<< HEAD
    final int id;
    const Event({Key? key,required this.id}) : super(key: key);
   @override
@@ -18,6 +22,18 @@ class Event extends StatelessWidget {
           builder: (context,i){
             // print(cubt.mainMaoPram);
             return cubt.mainMaoPram.isNotEmpty ? Column(
+=======
+  final int  id;
+  const Event({Key? key,required this.id}) : super(key: key);
+  @override
+  Widget build(BuildContext context) {
+    var cubt=MainCubt.get(context);
+    cubt.mainMap('events/event/$id');
+    return Material(
+      child: BlocBuilder<MainCubt,MainState>(
+        builder: (context,i) {
+          return Column(
+>>>>>>> 13bb8ca4347b53ea5847def815602b36dbce3003
             children: [
               Expanded(
                   flex: 1,
@@ -26,7 +42,11 @@ class Event extends StatelessWidget {
                       Image.network(
                           cubt.mainMaoPram["image"],
                           fit: BoxFit.cover,
+<<<<<<< HEAD
                           height:(MediaQuery.of(context).size.height/3.5),
+=======
+                          height:(MediaQuery.of(context).size.height/3)-20,
+>>>>>>> 13bb8ca4347b53ea5847def815602b36dbce3003
                       ),
                        Align(
                          alignment: Alignment.bottomRight,
@@ -58,6 +78,7 @@ class Event extends StatelessWidget {
           )),
                SizedBox(
                 child:cubt.mainMaoPram["avilabolevent"]==true? InkWell(
+<<<<<<< HEAD
                   onTap: ()async{
                     await Navigator.of(context).push(MaterialPageRoute(
                         builder: (context) => TiketFormMainBadge(
@@ -65,6 +86,10 @@ class Event extends StatelessWidget {
                           name1:cubt.mainMaoPram["name"],
                           // date: cubt.mainMaoPram["date"],
                         )));
+=======
+                  onTap: (){
+                    Navigator.pushNamed(context, "/tiketform");
+>>>>>>> 13bb8ca4347b53ea5847def815602b36dbce3003
                   },
                   child: Padding(
                     padding: const EdgeInsets.only(bottom: 20.0),
@@ -72,7 +97,11 @@ class Event extends StatelessWidget {
                         height:  60,
                         width:  180,
                         alignment: Alignment.center,
+<<<<<<< HEAD
                         child: Text("check her",style: TextStyle(
+=======
+                        child:const Text("check her",style: TextStyle(
+>>>>>>> 13bb8ca4347b53ea5847def815602b36dbce3003
                           color:Colors.white
                         )),
                         decoration: BoxDecoration(
@@ -85,7 +114,11 @@ class Event extends StatelessWidget {
                 ),
               )
             ],
+<<<<<<< HEAD
           ):Container();
+=======
+          );
+>>>>>>> 13bb8ca4347b53ea5847def815602b36dbce3003
         }
       ),
     );

@@ -7,7 +7,10 @@ class MainCubt extends Cubit<MainState>{
   static  MainCubt get(context)=>BlocProvider.of(context);
   String ? tokenKey;
   List mainListPram=[];
+<<<<<<< HEAD
   List mainListTeamPram=[];
+=======
+>>>>>>> 13bb8ca4347b53ea5847def815602b36dbce3003
   Map<String,dynamic> mainMaoPram={};
   Map<String,dynamic> mainMaoPramTeam={};
   void token(){
@@ -21,6 +24,7 @@ class MainCubt extends Cubit<MainState>{
     });
     emit(MainListState());
   }
+<<<<<<< HEAD
   void mainListTeam(url) async{
     await DioHelper.getData(url: url).then((value){
       mainListTeamPram=value.data;
@@ -34,6 +38,13 @@ class MainCubt extends Cubit<MainState>{
       // print(mainMaoPram);
    });
    emit(MainMapState());
+=======
+  void mainMap(url) async{
+   await DioHelper.getData(url: url).then((value){
+      mainMaoPram=value.data;
+    });
+    emit(MainMapState());
+>>>>>>> 13bb8ca4347b53ea5847def815602b36dbce3003
   }
   void mainMapTeam(url) async{
     await DioHelper.getData(url: url).then((value){

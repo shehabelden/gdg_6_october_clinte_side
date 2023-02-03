@@ -8,7 +8,11 @@ class NavBarCubt extends Cubit<MainNavState>{
     if(index<list.length){
     listCont=index;
     }
+<<<<<<< HEAD
     // print(index);
+=======
+    print(index);
+>>>>>>> 13bb8ca4347b53ea5847def815602b36dbce3003
     emit(ContNavMain());
 }
 }

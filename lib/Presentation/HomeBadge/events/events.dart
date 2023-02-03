@@ -38,12 +38,18 @@ class Events extends StatelessWidget {
                     padding: const EdgeInsets.only(left: 20.0,bottom: 20),
                     child: InkWell(
                       onTap: () async{
+<<<<<<< HEAD
                        await Navigator.of(context).push(
                            MaterialPageRoute(
                             builder: (context) => Event(id:cubt.mainListPram[i]["id"]!)
                            )
                        );
                         },
+=======
+                       await Navigator.of(context).push(MaterialPageRoute(
+                            builder: (context) => Event(id:cubt.mainListPram[i]["id"])));
+                      },
+>>>>>>> 13bb8ca4347b53ea5847def815602b36dbce3003
                       child: Row(
                         children: [
                           postContainer(

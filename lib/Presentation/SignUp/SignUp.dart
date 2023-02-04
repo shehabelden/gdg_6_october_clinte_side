@@ -16,7 +16,6 @@ class SignUpBadge extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Material(
-<<<<<<< HEAD
       child: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -45,34 +44,6 @@ class SignUpBadge extends StatelessWidget {
             ),
           ],
         ),
-=======
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          logo(
-            MediaQuery.of(context).size.height,
-            MediaQuery.of(context).size.width,
-            StaticText.signUp,
-            labelList.length,
-          ),
-          authField(
-            loginController.length,
-            MediaQuery.of(context).size.width,
-            MediaQuery.of(context).size.height,
-            labelList,
-            loginController,
-          ),
-          InkWell(
-            onTap:(){
-            },
-            child: authButton(
-              MediaQuery.of(context).size.height,
-              MediaQuery.of(context).size.width,
-              StaticText.signUp,
-            ),
-          ),
-        ],
->>>>>>> 13bb8ca4347b53ea5847def815602b36dbce3003
       ),
     );
   }

@@ -1,14 +1,8 @@
 import 'package:flutter/material.dart';
-<<<<<<< HEAD
 import 'package:gdg_6_october/Presentation/blog/badgs/MainBlog.dart';
 import 'package:gdg_6_october/Presentation/style/Container/postContainer.dart';
 
 Widget listViewHorizontal(width,height,List image,context){
-=======
-import 'package:gdg_6_october/Presentation/style/Container/postContainer.dart';
-
-Widget listViewHorizontal(width,height,List image){
->>>>>>> 13bb8ca4347b53ea5847def815602b36dbce3003
   return Align(
     alignment: Alignment.centerLeft,
     child: SizedBox(
@@ -20,7 +14,6 @@ Widget listViewHorizontal(width,height,List image){
         itemBuilder: (c,i){
           return Padding(
             padding: const EdgeInsets.only(left: 30.0),
-<<<<<<< HEAD
             child: InkWell(
               onTap: ()async{
                 await Navigator.of(context).push(
@@ -35,13 +28,6 @@ Widget listViewHorizontal(width,height,List image){
                   image[i]["image"],
                   8
               ),
-=======
-            child: postContainer(
-                height,
-                width,
-                image[i]["image"],
-                8
->>>>>>> 13bb8ca4347b53ea5847def815602b36dbce3003
             ),
           );
         },

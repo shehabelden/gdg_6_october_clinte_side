@@ -40,20 +40,12 @@ dependencies:
   flutter_bloc: ^8.1.1
   dio:
   shared_preferences:
-<<<<<<< HEAD
   draggable_home:
   iconly:
   font_awesome_flutter:
   sqflite:
   path_provider:
   url_launcher: ^6.1.8
-=======
-  draggable_home: ^1.0.4
-  iconly: ^1.0.1
-  font_awesome_flutter: ^10.3.0
-  sqflite: ^2.2.3
-  path_provider:
->>>>>>> 13bb8ca4347b53ea5847def815602b36dbce3003
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -78,11 +70,7 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-<<<<<<< HEAD
    - Images/
-=======
-     - Images/
->>>>>>> 13bb8ca4347b53ea5847def815602b36dbce3003
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

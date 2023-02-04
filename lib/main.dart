@@ -6,14 +6,9 @@ import 'package:gdg_6_october/Presentation/HomeBadge/cubt/cubt/cubt.dart';
 import 'package:gdg_6_october/Presentation/HomeBadge/social%20madiea/social%20madiea.dart';
 import 'package:gdg_6_october/Presentation/HomeBadge/team/team.dart';
 import 'package:gdg_6_october/Presentation/Main_Screan/cubt/cubt/cubt.dart';
-<<<<<<< HEAD
 import 'package:gdg_6_october/Presentation/Profile/cubt/cubt/cubt.dart';
 import 'package:gdg_6_october/Presentation/Saved/cubt/cubt/cubt.dart';
 import 'package:gdg_6_october/Presentation/SignUp/SignUp.dart';
-=======
-import 'package:gdg_6_october/Presentation/SignUp/SignUp.dart';
-import 'package:gdg_6_october/Presentation/Tiket/badges/TixetForm.dart';
->>>>>>> 13bb8ca4347b53ea5847def815602b36dbce3003
 import 'package:gdg_6_october/Presentation/Tiket/cubt/cubt/cubt.dart';
 import 'package:gdg_6_october/Presentation/blog/cubt/cubt/cubt.dart';
 import 'package:gdg_6_october/Presentation/login/Login.dart';
@@ -22,10 +17,7 @@ import 'package:gdg_6_october/Presentation/login_check/login_check.dart';
 import 'package:gdg_6_october/Presentation/welcome_badge/WelcomeBadge.dart';
 import 'package:gdg_6_october/app/cache_helper/cache_helper.dart';
 import 'package:gdg_6_october/app/main_cubt/cubt/cubt.dart';
-<<<<<<< HEAD
 import 'package:gdg_6_october/db/saved/saved.dart';
-=======
->>>>>>> 13bb8ca4347b53ea5847def815602b36dbce3003
 import 'package:gdg_6_october/db/tiket/tiketlocalmodel.dart';
 import 'Presentation/HomeBadge/events/events.dart';
 void main() async{
@@ -33,10 +25,7 @@ void main() async{
   await CacheHelper.init();
   await DioHelper.init();
   await TiketDb.init();
-<<<<<<< HEAD
   await SavedDb.init();
-=======
->>>>>>> 13bb8ca4347b53ea5847def815602b36dbce3003
   runApp(const MyApp());
 }
 class MyApp extends StatelessWidget {
@@ -50,13 +39,9 @@ class MyApp extends StatelessWidget {
         BlocProvider(create: (context)=>TiketCubt()),
         BlocProvider(create: (context)=>HomeApiCubt()),
         BlocProvider(create: (context)=>BlogApiCubt()),
-<<<<<<< HEAD
         BlocProvider(create: (context)=>SavedCubt()),
         BlocProvider(create: (context)=>NavBarCubt()),
         BlocProvider(create: (context)=>ProfApiCubt()),
-=======
-        BlocProvider(create: (context)=>NavBarCubt()),
->>>>>>> 13bb8ca4347b53ea5847def815602b36dbce3003
       ],
       child: MaterialApp(
         theme: ThemeData(
@@ -70,10 +55,6 @@ class MyApp extends StatelessWidget {
           "/team":(context) => const Team(),
           "/socialMedia":(context) => const SocialMedia(),
           "/AboutAs":(context) => const AboutAs(),
-<<<<<<< HEAD
-=======
-          "/tiketform":(context) => const TiketFormMainBadge(),
->>>>>>> 13bb8ca4347b53ea5847def815602b36dbce3003
           "/event":(context) => const Events(),
         },
         home: const LoginCheck(),
